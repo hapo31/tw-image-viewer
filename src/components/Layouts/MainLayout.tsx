@@ -99,4 +99,6 @@ const MenuWrap = styled.nav`
 
 const MainContentWrap = styled.main`
   padding: 2px;
+  flex-grow: 1;
+  height: 100%;
 `;
