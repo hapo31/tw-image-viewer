@@ -24,9 +24,9 @@ pkg-config がどうのとか言われたら OS 標準のパッケージマネ�
 ### Ubuntu
 
 ```commandline
-$ sudo apt update
-$ sudo apt install pkg-config
-$ sudo apt install libwebkit2gtk-4.0-dev \
+sudo apt update && 
+sudo apt install pkg-config \
+    libwebkit2gtk-4.0-dev \
     build-essential \
     curl \
     wget \
