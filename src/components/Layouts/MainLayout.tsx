@@ -58,7 +58,7 @@ export default function MainLayout({ children }: Props) {
 
 const Wrap = styled.div`
   display: flex;
-  background-color: #1e1e1e;
+  background-color: ${({ theme }) => theme.palette.backgroundColor};
   height: 100vh;
   width: 100vw;
 `;
@@ -69,7 +69,7 @@ const MenuWrap = styled.nav`
   justify-content: flex-start;
   align-items: center;
   width: 50px;
-  background-color: #333;
+  background-color: ${({ theme }) => theme.palette.menu.background};
   gap: 15px;
   padding: 15px 0px;
 
@@ -85,14 +85,14 @@ const MenuWrap = styled.nav`
     }
 
     &.active {
-      border-left: #ccc 2px solid;
+      border-left: ${({ theme }) => theme.palette.menu.active} 2px solid;
       padding-left: 1px;
       > svg {
-        fill: #ccc;
+        fill: ${({ theme }) => theme.palette.menu.active};
       }
     }
     > svg {
-      fill: #999;
+      fill: ${({ theme }) => theme.palette.menu.button};
     }
   }
 `;
